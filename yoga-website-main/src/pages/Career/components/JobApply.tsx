@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent } from "react";
-import Input from "../../UI/Input";
+import Input from "../UI/Input";
 
 export default function JobApply() {
   const [formData, setFormData] = useState({
@@ -34,6 +34,7 @@ export default function JobApply() {
       <h2 className="text-2xl md:text-3xl text-center mt-8">Application</h2>
       <form className="px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-4 mx-5">
+          {/* Existing input fields */}
           <Input type="text" placeholder="Enter your name" name="name" onChange={handleChange} value={formData.name} />
           <Input type="email" placeholder="Enter your email" name="email" onChange={handleChange} value={formData.email} />
           <Input type="date" name="dob" placeholder="Enter your DOB" onChange={handleChange} value={formData.dob} />
@@ -66,6 +67,7 @@ export default function JobApply() {
               value={formData.summary}
             ></textarea>
           </div>
+          {/* New input field for uploading resume */}
           <div className="flex flex-col gap-4">
             <label htmlFor="resume" className="text-sm font-medium">Upload Resume (Max 3 KB)</label>
             <input
