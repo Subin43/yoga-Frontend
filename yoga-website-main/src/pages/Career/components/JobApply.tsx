@@ -39,9 +39,7 @@ export default function JobApply() {
           <Input type="email" placeholder="Enter your email" name="email" onChange={handleChange} value={formData.email} />
           <Input type="date" name="dob" placeholder="Enter your DOB" onChange={handleChange} value={formData.dob} />
           <div className="flex flex-col gap-4">
-            <label htmlFor="gender" className="text-sm font-medium">
-              Gender
-            </label>
+            <label htmlFor="gender" className="text-sm font-medium">Gender</label>
             <select
               id="gender"
               name="gender"
@@ -58,9 +56,7 @@ export default function JobApply() {
           </div>
           <Input type="text" placeholder="Phone Number" name="phoneNumber" onChange={handleChange} value={formData.phoneNumber} />
           <div className="flex flex-col gap-4">
-            <label htmlFor="summary" className="text-sm font-medium">
-              Summary
-            </label>
+            <label htmlFor="summary" className="text-sm font-medium">Summary</label>
             <textarea
               id="summary"
               name="summary"
@@ -73,9 +69,7 @@ export default function JobApply() {
           </div>
           {/* New input field for uploading resume */}
           <div className="flex flex-col gap-4">
-            <label htmlFor="resume" className="text-sm font-medium">
-              Upload Resume (Max 3 KB)
-            </label>
+            <label htmlFor="resume" className="text-sm font-medium">Upload Resume (Max 3 KB)</label>
             <input
               type="file"
               id="resume"
@@ -87,12 +81,7 @@ export default function JobApply() {
           </div>
         </div>
         <div className="flex justify-end mt-6 mr-10">
-          <button
-            type="submit"
-            className="bg-blue-400 px-4 py-2 rounded-full inline-block hover:bg-blue-600"
-          >
-            Submit
-          </button>
+          <button type="submit" className="bg-blue-400 px-4 py-2 rounded-full inline-block hover:bg-blue-600">Submit</button>
         </div>
       </form>
     </>
