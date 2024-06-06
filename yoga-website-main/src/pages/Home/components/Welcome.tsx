@@ -66,7 +66,7 @@ export default function Welcome() {
           repeatType: "loop",
         }}
       />
-      <Chatbot className="absolute bottom-0 right-0 mb-2 md:mb-0 mr-2 md:mr-[10px]" /> {/* Adjusted position */}
+      <Chatbot /> {/* Removed className prop */}
     </div>
   );
 }
