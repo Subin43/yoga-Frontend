@@ -34,9 +34,9 @@ export default function JobApply() {
       <form className="px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-4 mx-5">
           {/* Existing input fields */}
-          <Input type="text" placeholder="Enter your name" label="Name*" name="name" onChange={handleChange} value={formData.name} />
-          <Input type="email" placeholder="Enter your email" label="Email*" name="email" onChange={handleChange} value={formData.email} />
-          <Input type="date" label="DOB" name="dob" placeholder="Enter your DOB" onChange={handleChange} value={formData.dob} />
+          <Input type="text" placeholder="Enter your name"  name="name" onChange={handleChange} value={formData.name} />
+          <Input type="email" placeholder="Enter your email"  name="email" onChange={handleChange} value={formData.email} />
+          <Input type="date"  name="dob" placeholder="Enter your DOB" onChange={handleChange} value={formData.dob} />
           <div className="flex flex-col gap-4">
             <label htmlFor="gender" className="text-sm font-medium">
               Gender
