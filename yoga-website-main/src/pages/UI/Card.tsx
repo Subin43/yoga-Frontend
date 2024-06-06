@@ -3,7 +3,12 @@ import Button from "./Button";
 import { fadeIn } from "../data/variant";
 import { Link } from "react-router-dom";
 
-export default function Card({ jobTitle, jobDescription }) {
+interface CardProps {
+  jobTitle: string;
+  jobDescription: string;
+}
+
+export default function Card({ jobTitle, jobDescription }: CardProps) {
   return (
     <motion.div
       variants={fadeIn("down", 0.3)}
