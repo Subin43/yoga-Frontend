@@ -22,10 +22,10 @@ export default function JobApply() {
   };
 
   const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    const { id, value } = event.target;
+    const { name, value } = event.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [id]: value,
+      [name]: value,
     }));
   };
 
@@ -44,6 +44,7 @@ export default function JobApply() {
             </label>
             <select
               id="gender"
+              name="gender"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5"
               required
               onChange={handleChange}
@@ -55,13 +56,14 @@ export default function JobApply() {
               <option value="Others">Others</option>
             </select>
           </div>
-          <Input type="text" label="Phone" placeholder="Phone Number" name="phoneNumber" onChange={handleChange} value={formData.phoneNumber} />
+          <Input type="text" placeholder="Phone Number" name="phoneNumber" onChange={handleChange} value={formData.phoneNumber} />
           <div className="flex flex-col gap-4">
             <label htmlFor="summary" className="text-sm font-medium">
               Summary
             </label>
             <textarea
               id="summary"
+              name="summary"
               cols={10}
               rows={5}
               className="bg-gray-50 border border-gray-300 rounded-xl p-2.5 text-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500"
@@ -77,6 +79,7 @@ export default function JobApply() {
             <input
               type="file"
               id="resume"
+              name="resume"
               accept=".pdf,.doc,.docx" // Restrict file types
               className="bg-gray-50 border border-gray-300 rounded-xl p-2.5 text-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500"
               onChange={handleFileChange} // Handle file change event
