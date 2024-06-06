@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 // import { CircleCheck } from "lucide-react";
 import { fadeIn } from "../../data/variant";
-import { listDatas } from "../../data/data";
+// import { listDatas } from "../../data/data";
 import { FaRegHandPointRight } from "react-icons/fa";
 
 export default function Feature() {
