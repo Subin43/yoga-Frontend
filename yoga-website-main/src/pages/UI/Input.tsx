@@ -4,12 +4,12 @@ interface InputProps {
   type: string;
   placeholder?: string;
   name: string;
+  label?: string;
   onChange: (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
   value: string;
-  label?: string;
 }
 
-const Input: React.FC<InputProps> = ({ type, placeholder, name, onChange, value, label }) => {
+const Input: React.FC<InputProps> = ({ type, placeholder, name, label, onChange, value }) => {
   return (
     <div className="flex flex-col gap-4">
       {label && <label htmlFor={name} className="text-sm font-medium">{label}</label>}
