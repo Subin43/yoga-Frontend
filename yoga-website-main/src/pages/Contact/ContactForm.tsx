@@ -132,7 +132,7 @@ export default function ContactForm() {
             required
           ></textarea>
 
-          <Button className="bg-blue-500 hover:bg-blue-700 text-white rounded-md" onClick={handleSend as any}>
+          <Button className="bg-blue-500 hover:bg-blue-700 text-white rounded-md" onClick={handleSend}>
             Send
           </Button>
         </div>
