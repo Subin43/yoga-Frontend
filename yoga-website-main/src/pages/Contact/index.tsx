@@ -1,4 +1,3 @@
-import React from 'react';
 // import { IoMdCall } from "react-icons/io";
 // import { MdOutlineEmail, MdLocationOn } from "react-icons/md";
 // import { motion } from "framer-motion";
