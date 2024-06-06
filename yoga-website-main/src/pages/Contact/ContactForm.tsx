@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from "react";
+import React, { ChangeEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../data/variant"; // Assuming you have a variant file
 import Button from "../UI/Button";
@@ -12,7 +12,8 @@ export default function ContactForm() {
     message: "",
   });
 
-  const handleSend = async () => {
+  const handleSend = async (e: FormEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     console.log("Submit button clicked");
     try {
       // Check if name, email, subject, and message are empty
@@ -115,7 +116,6 @@ export default function ContactForm() {
           <input
             type="text"
             id="subject"
-            
             className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-green-500"
             value={formData.subject}
             onChange={handleChange}
