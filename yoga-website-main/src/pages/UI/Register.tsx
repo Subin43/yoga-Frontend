@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Input from "./Input";
+// import Input from "./Input";
 import axios from "axios";
 import { useState } from "react";
 
@@ -34,19 +34,19 @@ export default function Register() {
   return (
     <div className="min-h-screen flex justify-center items-center px-4">
       <form className="grid gap-4" onSubmit={handleSubmit}>
-        <Input
+        <input
           type="email"
           placeholder="Enter your email"
           label="Email"
           name="user_name"
         />
-        <Input
+        <input
           type="password"
           placeholder="Enter your password"
           label="Password"
           name="password"
         />
-        <Input
+        <input
           type="password"
           placeholder="Confirm password"
           label="Confirm Password"
