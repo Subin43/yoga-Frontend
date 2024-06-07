@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
-import Input from "./Input";
+//import input from "./input";
 
 export default function LoginForm() {
   return (
     <div className="min-h-screen flex justify-center items-center">
       <form className="grid gap-4 px-4">
-        <Input
+        <input
           type="email"
           placeholder="Enter your email"
           label="Email"
           name="email"
         />
-        <Input
+        <input
           type="password"
           placeholder="Enter your password"
           label="Password"
